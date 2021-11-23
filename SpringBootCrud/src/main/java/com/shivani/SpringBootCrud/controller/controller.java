@@ -34,7 +34,7 @@ public class controller {
 
         subjectservice.updateSubject(id,subject);
     }
-
+    @RequestMapping(method = RequestMethod.DELETE,value = "/subjects/{id}"
     public void deleteSubject(@PathVariable String id){
         subjectservice.deleteSubject(id);
     
